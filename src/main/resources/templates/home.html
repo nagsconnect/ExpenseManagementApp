@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Management Home</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .option a {
+            display: block;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .option a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to Expense Management App</h1>
+  <div class="option">
+    <a class="button" href="#" onclick="navigateTo('expense/form')">Expense Form</a>
+  </div>
+  <div class="option">
+    <a class="button" href="#" onclick="navigateTo('user/registration')">Registration Form</a>
+  </div>
+  <div class="option">
+    <a class="button" href="#" onclick="navigateTo('expense/view')">Expense View Form</a>
+  </div>
+</div>
+
+<script>
+        function navigateTo(path) {
+            window.location.href = path;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Error Saving Expense</title>
+  <script>
+        setTimeout(function() {
+            window.location.href = "/expense/form";
+        }, 5000); // Redirect after 5 seconds
+    </script>
+</head>
+<body>
+<h1>Error Saving Expense</h1>
+<p>Failed to save the expense. Please try again.</p>
+<p>Redirecting back to the expense form...</p>
+<p>If the problem persists, please check the error details below:</p>
+<p>Error details: ${responseEntity}</p>
+</body>
+</html>
